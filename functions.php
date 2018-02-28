@@ -160,15 +160,20 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/widgets.php';
 
 /**
- * Load Custom Navigation Walker file.
- */
-require get_template_directory() . '/inc/wp-bootstrap-navwalker.php';
-
-
-/**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
+}
+
+/**
+ * Load WP Bootstrap Navwalker.
+ */
+if ( ! file_exists( get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php' ) ) {
+	// file does not exist... return an error.
+	return new WP_Error( 'class-wp-bootstrap-navwalker-missing', __( 'It appears the class-wp-bootstrap-navwalker.php file may be missing.', 'wp-bootstrap-navwalker' ) );
+} else {
+	// file exists... require it.
+    require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
 }
 
