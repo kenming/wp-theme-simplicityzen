@@ -4,3 +4,7 @@
 - ** Release 0.6.2 03/06/2018 **
   - add CHANGELOG.md
   - fix index.php to suite Bootstrap 4 grid layout
+
+- ** Release 0.6.3 03/06/2018 **
+  - upgrade fontawesome version to 5.0.8
+  - change fontasesome method from SVG with JS to WebFont with CSS

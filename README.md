@@ -37,7 +37,7 @@ Source: https://underscores.me/
 Bootstrap is licensed under the MIT license.
 Source: http://getbootstrap.com
 
-* Font Awesome 5.0.6  
+* Font Awesome 5.0.8
 Font Awesome is licensed under SIL Open Font License.
 Source: http://fontawesome.io
 
@@ -45,5 +45,4 @@ ___
 
 ## Changelog
 
-- ** Release 0.6.0 02/27/2018 **  
-      - Integrated the _S plus Bootstrap & Font Awesome
+- See CHANGELOG.md
