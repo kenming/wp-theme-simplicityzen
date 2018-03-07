@@ -106,6 +106,8 @@ add_action( 'after_setup_theme', 'simplicityzen_content_width', 0 );
  */
 function simplicityzen_scripts() {
 	wp_enqueue_style( 'simplicityzen-bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css' );
+	
+	wp_enqueue_style( 'simplicityzen-fontawesome', get_template_directory_uri() . '/assets/css/fontawesome-all.css' );
 
 	wp_enqueue_style( 'simplicityzen-style', get_stylesheet_uri() );
 
@@ -114,8 +116,6 @@ function simplicityzen_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-
-	wp_enqueue_script('simplicityzen-fontawesome', get_template_directory_uri().'/assets/js/fontawesome-all.js', null, null, true );
 
 	/**
 	 * 	Enquese bootstrap 4.x scripts
