@@ -26,6 +26,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 # Navigation
 	## Links
 	## Menus
+	## Pagination
 # Accessibility
 # Alignments
 # Clearings
@@ -307,6 +308,7 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
@@ -353,6 +355,16 @@ a:hover, a:active {
 	float: right;
 	text-align: right;
 	width: 50%;
+}
+
+/*--------------------------------------------------------------
+## Pagination
+--------------------------------------------------------------*/
+.pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: .25rem;
 }
 
 /*--------------------------------------------------------------
